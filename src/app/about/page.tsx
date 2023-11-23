@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main>
-      <h1>This is the main page</h1>
+      <h1>This is the about page</h1>
     </main>
   );
 }
