@@ -1,11 +1,13 @@
-import React from "react";
+import styles from "@/app/ui/styles/header.module.css";
 import NavLinks from "./nav_links";
 
 export default function Header() {
   return (
-    <header>
-      <NavLinks URL="/" title="Home" />
-      <NavLinks URL="/about" title="About" />
+    <header className={styles.header}>
+      <nav className={styles.navLinks}>
+        <NavLinks URL="/" title="Home" />
+        <NavLinks URL="/about" title="About" />
+      </nav>
     </header>
   );
 }

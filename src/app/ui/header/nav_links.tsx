@@ -8,9 +8,5 @@ export default function NavLinks({
   URL: string;
   title: string;
 }) {
-  return (
-    <nav>
-      <Link href={URL}>{title}</Link>
-    </nav>
-  );
+  return <Link href={URL}>{title}</Link>;
 }

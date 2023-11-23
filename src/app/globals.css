@@ -3,3 +3,21 @@
   margin: 0;
   font-family: "Courier New", Courier, monospace;
 }
+
+body {
+  height: 100vh;
+}
+Header,
+Footer {
+  height: 3%;
+  position: sticky;
+  z-index: 20;
+}
+
+Header {
+  top: 0px;
+}
+
+Footer {
+  top: 97%;
+}

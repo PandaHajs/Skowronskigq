@@ -1,0 +1,16 @@
+.header,
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background-color: aliceblue;
+}
+
+.navLinks {
+  background-color: aqua;
+  width: 6%;
+  margin-left: 1vw;
+  justify-content: space-around;
+}
