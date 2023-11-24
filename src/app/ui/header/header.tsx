@@ -1,4 +1,4 @@
-import styles from "@/app/ui/styles/header.module.css";
+import styles from "@/app/ui/styles/header.module.scss";
 import NavLinks from "./nav_links";
 
 export default function Header() {

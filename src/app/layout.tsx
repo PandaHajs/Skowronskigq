@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import "@/app/ui/styles/variables.css";
+import "./globals.scss";
+import "@/app/ui/styles/variables.scss";
 import Header from "@/app/ui/header/header";
 import Footer from "@/app/ui/footer";
+import { lato } from "./lib/fonts";
 
 export const metadata: Metadata = {
   title: "Skowronski",
@@ -31,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={lato.className}>
         <Header />
         {children}
         <Footer />

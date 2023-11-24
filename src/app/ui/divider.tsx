@@ -1,4 +1,4 @@
-import styles from "@/app/ui/styles/divider.module.css";
+import styles from "@/app/ui/styles/divider.module.scss";
 
 export default function Divider({ children }: { children: React.ReactNode }) {
   return (

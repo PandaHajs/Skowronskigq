@@ -1,0 +1,17 @@
+.hide {
+  display: hidden;
+}
+.animate {
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 0.5;
+  }
+}

@@ -8,3 +8,8 @@ export function getMyAge(): number {
   let age: number = today.getFullYear() - birthDate.getFullYear();
   return age;
 }
+
+export function getMyArticle(): string {
+  let age: number = getMyAge();
+  return [8, 11, 18].includes(age) ? "An" : "A";
+}

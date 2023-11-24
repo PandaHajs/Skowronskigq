@@ -1,6 +1,7 @@
-import { getMyAge } from "../lib/dates";
+import { getMyAge } from "../lib/age";
 import Divider from "../ui/divider";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
+import { lexend } from "../lib/fonts";
 
 export default function Home() {
   let age: number = getMyAge();
@@ -8,7 +9,7 @@ export default function Home() {
     <main>
       <Divider>
         <div className={styles.text}>
-          <h1>About me</h1>
+          <h1 className={lexend.className}>About me</h1>
           <p>
             I was born on [REDACTED] in 2004, I&apos;m currently {age} years old
             and living in Poznan, Poland. At this point in time I have only
