@@ -1,0 +1,22 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  max-width: 40vw;
+  max-height: 50vh;
+  z-index: 2;
+  color: white;
+}
+
+.text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.top {
+  margin-bottom: 0.5rem;
+}
+
+.top p {
+  margin-top: -0.5rem;
+}

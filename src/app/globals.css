@@ -9,15 +9,17 @@ body {
 }
 Header,
 Footer {
-  height: 3%;
-  position: sticky;
+  height: 5%;
+
   z-index: 20;
 }
 
 Header {
   top: 0px;
+  position: sticky;
 }
 
 Footer {
-  top: 97%;
+  position: fixed;
+  width: 100%;
 }

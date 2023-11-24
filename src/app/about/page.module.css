@@ -1,0 +1,8 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  max-width: 40vw;
+  max-height: 50vh;
+  z-index: 2;
+  color: white;
+}
