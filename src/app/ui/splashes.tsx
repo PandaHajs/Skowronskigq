@@ -15,13 +15,23 @@ const names = [
 function getSplash(): string {
   return names[Math.floor(Math.random() * names.length)];
 }
-function clickSplash(setSplash: (s: string) => void) {
-  setSplash(getSplash());
-}
 
 export default function Splash() {
   const [splash, setSplash] = useState<string>("...");
-  const [isTransition, setIsTransition] = useState(false);
+  const [isTransition, setIsTransition] = useState<boolean>(false);
+
+  function clickSplash(setSplash: (s: string) => void) {
+    setTimeout(() => {
+      setIsTransition(false);
+    }, 400);
+    setTimeout(() => {
+      setSplash(getSplash());
+    }, 100);
+    setTimeout(() => {
+      setIsTransition(true);
+    }, 100);
+  }
+
   useEffect(() => {
     setSplash(getSplash());
     setIsTransition(true);
@@ -29,6 +39,7 @@ export default function Splash() {
       setIsTransition(false);
     }, 400);
   }, []);
+
   return (
     <p
       className={isTransition ? styles.animate : styles.hide}

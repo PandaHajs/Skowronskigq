@@ -24,3 +24,30 @@
     transition-duration: 0.5s;
   }
 }
+
+@media (max-width: 768px) {
+  .navLinks {
+    width: 30%;
+  }
+}
+
+@media (768px <= width <= 1024px) {
+  .navLinks {
+    width: 15%;
+    font-size: x-large;
+  }
+}
+
+@media (1024px <= width <= 1440px) {
+  .navLinks {
+    width: 10%;
+    font-size: x-large;
+  }
+}
+
+@media (width > 1920px) {
+  .navLinks {
+    width: 8%;
+    font-size: xx-large;
+  }
+}
