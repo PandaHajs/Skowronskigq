@@ -1,5 +1,4 @@
 .parttop {
-  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +7,7 @@
   padding: 20vh 0;
 }
 .partbot {
-  height: 50%;
+  height: 55%;
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
   background-color: var(--main2);
   position: absolute;
@@ -17,5 +16,5 @@
 }
 
 .view {
-  height: 90vh;
+  height: 100%;
 }
