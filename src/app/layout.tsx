@@ -4,6 +4,7 @@ import "@/app/ui/styles/variables.scss";
 import Header from "@/app/ui/header/header";
 import Footer from "@/app/ui/footer";
 import { lato } from "./lib/fonts";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Skowronski",
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
