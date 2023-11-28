@@ -10,6 +10,7 @@ const names = [
   "A guy who has no idea what he's doing",
   "All hands to battle stations!",
   "General Kenobi",
+  "Lvl 9 wizard",
 ];
 
 function getSplash(): string {

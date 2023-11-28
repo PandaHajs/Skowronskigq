@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main>
       <Divider>
-        <div className={styles.text}>
+        <section className={styles.text}>
           <h1 className={lexend.className}>About me</h1>
           <p>
             I was born on [REDACTED] in 2004, I&apos;m currently {age} years old
@@ -19,7 +19,7 @@ export default function Home() {
             sure what I want to do in life, but I&apos;m certain it will either
             be something in networking or web development.
           </p>
-        </div>
+        </section>
       </Divider>
     </main>
   );
