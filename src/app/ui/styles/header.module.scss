@@ -57,12 +57,20 @@
   .navLinks {
     width: 30%;
   }
+  .show {
+    margin-top: 1.5vh;
+    width: 20vw;
+  }
 }
 
-@media (768px <= width <= 1024px) {
+@media (768px <= width < 1024px) {
   .navLinks {
     width: 15%;
     font-size: x-large;
+  }
+  .show {
+    margin-top: 0.5vh;
+    width: 12vw;
   }
 }
 
@@ -70,6 +78,9 @@
   .navLinks {
     width: 10%;
     font-size: x-large;
+  }
+  .show {
+    width: 10vw;
   }
 }
 
