@@ -18,10 +18,7 @@ export default function Home() {
             <Splash />
           </div>
           <p>
-            {article} {age} years old IT Student from Poland, with the life
-            motto &quot;If I don&apos;t have to do it, I won&apos;t. If I have
-            to do it, I&apos;ll make it quick.&quot; who for some reason made
-            this site without having to.
+            {article} {age} years old IT Student from Poland.
           </p>
         </section>
       </Divider>
