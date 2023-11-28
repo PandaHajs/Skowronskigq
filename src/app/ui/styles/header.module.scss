@@ -12,9 +12,9 @@
   z-index: 5;
   background-color: var(--main2);
   width: 4vw;
-  border: #b1b1b1 solid 1px;
+  border: var(--borders) solid 1px;
   a {
-    color: #b1b1b1;
+    color: var(--borders);
     padding: 5px 0;
     text-decoration: none;
     width: 100%;
@@ -29,7 +29,7 @@
   }
 }
 .btn:hover {
-  border: 3px solid #b1b1b1;
+  border: 3px solid var(--borders);
   img {
     filter: invert(100%);
   }
