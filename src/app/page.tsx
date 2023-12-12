@@ -3,6 +3,7 @@ import styles from "./page.module.scss";
 import { getMyAge, getMyArticle } from "./lib/age";
 import { lexend } from "./lib/fonts";
 import Splash from "./ui/splashes";
+import Links from "./ui/links";
 
 export default function Home() {
   let age: number = getMyAge();
@@ -21,6 +22,7 @@ export default function Home() {
             {article} {age} years old IT Student from Poland.
           </p>
         </section>
+        <Links />
       </Divider>
     </main>
   );

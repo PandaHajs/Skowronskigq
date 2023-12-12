@@ -7,13 +7,23 @@ import menu from "@/public/menu.svg";
 
 export default function Header() {
   const [show, setShow] = useState(false);
+  const [cname, setCname] = useState(styles.btn);
   function toggleShow() {
     setShow(!show);
+  }
+  function toggleCname() {
+    setCname(show ? styles.btn : styles.active);
   }
   return (
     <header className={styles.header}>
       <nav className={styles.navLinks}>
-        <button className={styles.btn} onClick={toggleShow}>
+        <button
+          className={cname}
+          onClick={() => {
+            toggleShow();
+            toggleCname();
+          }}
+        >
           <Image
             src={menu}
             width={40}

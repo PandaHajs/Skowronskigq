@@ -28,13 +28,9 @@
     color: white;
   }
 }
-.btn:hover {
-  border: 3px solid var(--borders);
-  img {
-    filter: invert(100%);
-  }
-}
-.btn {
+
+.btn,
+.active {
   width: 46px;
   height: 46px;
   margin-top: 2vh;
@@ -45,6 +41,14 @@
   transition-duration: 0.25s;
   img {
     transition-duration: 0.25s;
+  }
+}
+
+.btn:hover,
+.active {
+  border: 3px solid var(--borders);
+  img {
+    filter: invert(100%);
   }
 }
 
