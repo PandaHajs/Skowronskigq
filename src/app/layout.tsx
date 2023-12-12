@@ -5,6 +5,7 @@ import Header from "@/app/ui/header/header";
 import Footer from "@/app/ui/footer";
 import { lato } from "./lib/fonts";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Skowronski",
@@ -38,6 +39,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
