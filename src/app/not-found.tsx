@@ -1,5 +1,5 @@
+import Link from "next/link";
 import Divider from "./ui/divider";
-import NavLinks from "./ui/header/nav_links";
 import styles from "@/app/ui/styles/not-found.module.scss";
 
 export default function NotFound() {
@@ -11,7 +11,7 @@ export default function NotFound() {
             Oops! Seems like this page doesn&apos;t exist.
           </h1>
           <div className={styles.btn}>
-            <NavLinks URL={"/"} title={"Go back"} />
+            <Link href="/">Go back</Link>
           </div>
         </section>
       </Divider>

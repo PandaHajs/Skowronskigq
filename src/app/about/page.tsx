@@ -2,6 +2,11 @@ import { getMyAge } from "../lib/age";
 import Divider from "../ui/divider";
 import styles from "./page.module.scss";
 import { lexend } from "../lib/fonts";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+};
 
 export default function Home() {
   let age: number = getMyAge();
