@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Link({
+export default function CustomLink({
   icon,
   link,
   alt,
@@ -10,8 +11,8 @@ export default function Link({
   alt: string;
 }) {
   return (
-    <a href={link} target="_blank">
+    <Link href={link} target="_blank">
       <Image src={icon} alt={alt} width="50" height="50" />
-    </a>
+    </Link>
   );
 }
