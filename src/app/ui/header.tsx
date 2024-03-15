@@ -6,6 +6,7 @@ export default function Header() {
     <header className={styles.header}>
       <nav className={styles.navLinks}>
         <Link href="/">Home</Link>
+        <Link href="/projects">Projects</Link>
         <Link href="/about">About</Link>
       </nav>
     </header>

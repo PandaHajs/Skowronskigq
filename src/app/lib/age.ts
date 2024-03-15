@@ -3,10 +3,10 @@ export function currentYear(): number {
 }
 
 export function getMyAge(): number {
-  const birthDate: Date = new Date(2004, 10, 1);
-  const today: Date = new Date();
-  let age: number = today.getFullYear() - birthDate.getFullYear();
-  return age;
+  const birthDate: Date = new Date(2004, 9, 2);
+  const dateDiff: number = Date.now() - birthDate.getTime();
+  const ageDiff: Date = new Date(dateDiff);
+  return Math.abs(ageDiff.getUTCFullYear() - 1970);
 }
 
 export function getMyArticle(): string {
