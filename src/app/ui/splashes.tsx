@@ -1,32 +1,31 @@
 "use client";
 import { useEffect, useState } from "react";
 import styles from "./styles/splashes.module.scss";
-const names = [
-  "An IT Student",
-  "Kac Biznesu",
-  "Just some random guy",
-  "The perfect victim",
-  "A beloved boyfriend",
-  "A guy who has no idea what he's doing",
-  "All hands to battle stations!",
-  "General Kenobi",
-  "Lvl 9 wizard",
-];
-
-function getSplash(): string {
-  return names[Math.floor(Math.random() * names.length)];
-}
 
 export default function Splash() {
   const [splash, setSplash] = useState<string>("...");
   const [isTransition, setIsTransition] = useState<boolean>(false);
+  const getSplashes = async () => {
+    try {
+      const response = await fetch(`/api`, {
+        method: "GET",
+      });
+      if (response) {
+        const { splash } = await response.json();
+        if (splash) setSplash(splash);
+      }
+    } catch (e) {
+      console.error(e);
+      setSplash("...");
+    }
+  };
 
   function clickSplash(setSplash: (s: string) => void) {
     setTimeout(() => {
       setIsTransition(false);
     }, 400);
     setTimeout(() => {
-      setSplash(getSplash());
+      getSplashes();
     }, 100);
     setTimeout(() => {
       setIsTransition(true);
@@ -34,7 +33,7 @@ export default function Splash() {
   }
 
   useEffect(() => {
-    setSplash(getSplash());
+    getSplashes();
     setIsTransition(true);
     setTimeout(() => {
       setIsTransition(false);
