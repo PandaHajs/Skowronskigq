@@ -13,6 +13,6 @@ const names: string[] = [
 
 export async function GET() {
   return NextResponse.json({
-    splash: names[Math.floor(Math.random() * names.length)],
+    splash: names,
   });
 }

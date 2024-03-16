@@ -12,7 +12,8 @@ export default function Splash() {
       });
       if (response) {
         const { splash } = await response.json();
-        if (splash) setSplash(splash);
+        if (splash)
+          setSplash(splash[Math.floor(Math.random() * splash.length)]);
       }
     } catch (e) {
       console.error(e);
