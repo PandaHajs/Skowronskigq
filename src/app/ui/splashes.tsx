@@ -1,12 +1,12 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import styles from "./styles/splashes.module.scss";
 import { lato } from "../lib/fonts";
 
 export default function Splash() {
 	const [splash, setSplash] = useState<string>("...");
 	const [isTransition, setIsTransition] = useState<boolean>(false);
-	const getSplashes = async () => {
+	const getSplashes = useCallback(async () => {
 		try {
 			const response = await fetch("/api", {
 				method: "GET",
@@ -20,7 +20,7 @@ export default function Splash() {
 			console.error(e);
 			setSplash("...");
 		}
-	};
+	}, []);
 
 	function clickSplash(setSplash: (s: string) => void) {
 		setTimeout(() => {
@@ -40,7 +40,7 @@ export default function Splash() {
 		setTimeout(() => {
 			setIsTransition(false);
 		}, 400);
-	}, []);
+	}, [getSplashes]);
 
 	return (
 		<button
@@ -50,7 +50,6 @@ export default function Splash() {
 					: `${styles.hide} ${lato.className}`
 			}
 			onClick={() => clickSplash(setSplash)}
-			onKeyDown={() => clickSplash(setSplash)}
 			type="button"
 		>
 			{splash}
