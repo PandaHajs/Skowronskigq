@@ -15,13 +15,16 @@
 
 .top {
   margin-bottom: 0.5rem;
-  p {
+  button {
     margin-top: -0.5rem;
     color: rgba(255, 255, 255, 0.5);
     font-style: italic;
     user-select: none;
     cursor: pointer;
     width: fit-content;
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
   }
 }
 

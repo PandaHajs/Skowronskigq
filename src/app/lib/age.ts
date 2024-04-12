@@ -10,6 +10,6 @@ export function getMyAge(): number {
 }
 
 export function getMyArticle(): string {
-  let age: number = getMyAge();
+  const age: number = getMyAge();
   return [8, 11, 18].includes(age) ? "An" : "A";
 }
