@@ -1,6 +1,6 @@
 import { getMyAge, getMyArticle } from "../lib/age";
-import styles from "@/app/page.module.scss";
 import { lexend } from "../lib/fonts";
+import styles from "./styles/card.module.scss";
 
 export default function Card({ children }: { children: React.ReactNode }) {
 	const age: number = getMyAge();

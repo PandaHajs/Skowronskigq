@@ -6,6 +6,7 @@ import Footer from "@/app/ui/footer";
 import { lato } from "./lib/fonts";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Divider from "./ui/divider";
 
 export const metadata: Metadata = {
 	title: {

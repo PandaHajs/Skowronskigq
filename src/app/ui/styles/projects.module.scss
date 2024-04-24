@@ -1,0 +1,71 @@
+.featured {
+    border-radius: 10px;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.featured,
+.project {
+    border: 2px solid var(--borders2);
+    transition: 0.5s;
+}
+
+.featured:hover,
+.project:hover {
+    border: 2px solid var(--borders);
+}
+
+
+.project {
+    padding: 5%;
+    height: 100%;
+    width: 22.5vw;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        height: 20vh;
+
+        .project {
+            width: 35vw;
+        }
+    }
+}
+
+@media (768px <=width < 1024px) {
+
+    .projects {
+        height: 25vh;
+
+        .project {
+            width: 30vw;
+        }
+    }
+}
+
+@media (1024px <=width <=1440px) {
+
+    .projects {
+        height: 30vh;
+
+        .project {
+            width: 25vw;
+        }
+    }
+}
+
+@media (width > 1920px) {
+
+    .projects {
+        height: 35vh;
+
+        .project {
+            width: 20vw;
+        }
+    }
+}
