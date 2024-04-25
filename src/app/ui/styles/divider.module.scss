@@ -3,26 +3,29 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--main);
-  width: 100%;
-  padding: 20vh 0 0 0;
-  height: 50%;
-  position: absolute;
+  width: 100vw;
+  padding-top: 20vh;
+  height: 80%;
+  margin-top: 4%;
 }
+
 .partbot {
   height: 50%;
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
   background-color: var(--main2);
-  position: absolute;
-  bottom: 5vh;
-  width: 100%;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
 }
 
 .view {
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {
   .parttop {
-    padding: 5vh 0 0 0;
+    padding-top: 10vh;
   }
 }
