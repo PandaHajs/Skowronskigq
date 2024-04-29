@@ -11,6 +11,10 @@
     width: 100%;
   }
 
+  h2 {
+    margin-right: 2.5vw;
+  }
+
   .projects {
     margin-top: 5vh;
     width: 100%;
@@ -18,10 +22,10 @@
     position: relative;
     display: grid;
     grid-template:
-      "a b" 50%
-      "c d" 50%;
+      "a b"
+      "c d";
     row-gap: 20%;
-    column-gap: 10%;
+    column-gap: 5%;
   }
 }
 
@@ -45,6 +49,7 @@
 
     h2 {
       font-size: 3vw;
+
     }
 
     p {

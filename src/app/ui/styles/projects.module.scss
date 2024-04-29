@@ -21,51 +21,8 @@
 
 
 .project {
-    padding: 5%;
+    padding: 20px;
     height: 100%;
-    width: 22.5vw;
+    width: 100%;
     border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-    .projects {
-        height: 20vh;
-
-        .project {
-            width: 35vw;
-        }
-    }
-}
-
-@media (768px <=width < 1024px) {
-
-    .projects {
-        height: 25vh;
-
-        .project {
-            width: 30vw;
-        }
-    }
-}
-
-@media (1024px <=width <=1440px) {
-
-    .projects {
-        height: 30vh;
-
-        .project {
-            width: 25vw;
-        }
-    }
-}
-
-@media (width > 1920px) {
-
-    .projects {
-        height: 35vh;
-
-        .project {
-            width: 20vw;
-        }
-    }
 }
