@@ -17,12 +17,10 @@ export default function Home() {
 					<h1 className={lexend.className}>About me</h1>
 					<p>
 						I was born on [REDACTED] in 2004, I&apos;m currently {age} years old
-						and living in Poznan, Poland. At this point in time I have only
-						primary education and finished more than half of my High School. I
-						have the CISCO ITE 5.0 certificate and succesfully underwent the
-						CISCO CCNA1 course (I&apos;m not certified tho). I&apos;m not yet
-						sure what I want to do in life, but I&apos;m certain it will either
-						be something in networking or web development.
+						and living in Poznan, Poland. I&apos;ve recently finished High
+						School and I&apos;m currently studying Computer Science at the
+						University of Technology in Poznan. I&apos;m a self-taught web
+						developer and I hope to make a career out of it.
 					</p>
 				</section>
 			</Divider>
