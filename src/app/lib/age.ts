@@ -9,7 +9,3 @@ export function getMyAge(): number {
   return Math.abs(ageDiff.getUTCFullYear() - 1970);
 }
 
-export function getMyArticle(): string {
-  const age: number = getMyAge();
-  return [8, 11, 18].includes(age) ? "An" : "A";
-}

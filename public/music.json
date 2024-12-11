@@ -1,0 +1,14 @@
+{
+    "music": [
+      {
+        "id": 1,
+        "title": "To Be Human",
+        "artist": "Marina"
+      },
+      {
+        "id": 2,
+        "title": "Your World Will Fail",
+        "artist": "Les Friction"
+      }
+    ]
+  }
