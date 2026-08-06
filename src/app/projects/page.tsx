@@ -23,6 +23,11 @@ export default function Home() {
             link="/"
             description="My personal website, made using React, TS, SASS and the Next.JS framework."
           />
+          <Project
+              title="Simple Clicker"
+              link="https://clicker.skowronski.one/"
+              description="Simple clicker game made with NextJS, Flask and PostgreSQL, also using websockets."
+            />
         </section>
         <div>
           <h2>Team Projects</h2>

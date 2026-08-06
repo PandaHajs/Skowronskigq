@@ -9,6 +9,8 @@ const names: string[] = [
   "All hands to battle stations!",
   "General Kenobi",
   "Lvl 9 wizard",
+  "I saw corpos strip farmers of water",
+  "Technoblade never dies",
 ];
 
 export async function GET() {

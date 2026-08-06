@@ -17,10 +17,8 @@ export default function Home() {
 					<h1 className={lexend.className}>About me</h1>
 					<p>
 						I was born on [REDACTED] in 2004, I&apos;m currently {age} years old
-						and living in Poznan, Poland. I&apos;ve recently finished High
-						School and I&apos;m currently studying Computer Science at the
-						University of Technology in Poznan. I&apos;m a self-taught web
-						developer and I hope to make a career out of it.
+						and living in Poznan, Poland. I&apos;m currently studying Computer Science at the
+						University of Technology in Poznan and working as an IT SAP Finance Apprentice at John Deere since 04.2025. I&apos;m interested in programming, web development and computer science in general.
 					</p>
 				</section>
 			</Divider>
