@@ -1,4 +1,4 @@
-.styles {
+.container {
   color: white;
   width: 50%;
   display: flex;
@@ -50,6 +50,10 @@
     width: 75%;
     margin-top: 0;
   }
+
+  .projects {
+    flex-direction: column;
+  }
 }
 
 @media (768px <=width < 1024px) {
@@ -58,12 +62,19 @@
     margin-top: 0;
   }
 
+  .projects {
+    flex-direction: column;
+  }
 }
 
 @media (1024px <=width <=1440px) {
   .styles {
     width: 50%;
     margin-top: 0;
+  }
+
+  .projects {
+    flex-direction: column;
   }
 
 }

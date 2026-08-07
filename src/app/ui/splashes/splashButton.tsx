@@ -1,6 +1,6 @@
-import styles from "../styles/splashes.module.scss";
-import { lato } from "../../lib/fonts";
 import type { Dispatch, SetStateAction } from "react";
+import { lato } from "../../lib/fonts";
+import styles from "../styles/splashes.module.scss";
 
 type SplashButtonProps = {
 	isTransition: boolean;

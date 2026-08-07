@@ -1,7 +1,7 @@
 "use client";
 
-import { useSplash } from "./splashes.hook";
 import SplashButton from "./splashButton";
+import { useSplash } from "./splashes.hook";
 
 export default function Splash() {
 	const { splash, clickSplash, isTransition, setSplash } = useSplash();
