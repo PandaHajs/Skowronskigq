@@ -23,8 +23,28 @@
 }
 
 @media (max-width: 768px) {
+  .view {
+    position: relative;
+    min-height: 100dvh;
+    height: auto;
+    overflow-x: hidden;
+    background-color: var(--main2);
+  }
+
   .parttop {
-    padding: 5vh 0 0 0;
+    position: relative;
+    z-index: 1;
+    min-height: 100dvh;
+    height: auto;
+    padding: 5vh 0 12vh 0;
+  }
+
+  .partbot {
+    left: -1px;
+    width: calc(100% + 2px);
+    height: 100%;
+    bottom: 0;
+    z-index: 0;
   }
 }
 

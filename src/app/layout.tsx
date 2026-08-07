@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.scss";
 import "@/app/ui/styles/variables.scss";
-import Header from "@/app/ui/header";
-import Footer from "@/app/ui/footer";
-import { lato } from "./lib/fonts";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Footer from "@/app/ui/footer";
+import Header from "@/app/ui/header";
+import { lato } from "./lib/fonts";
 
 export const metadata: Metadata = {
 	title: {
@@ -29,6 +29,11 @@ export const metadata: Metadata = {
 		"Kacper Skowronski",
 		"Skowronskiga",
 	],
+};
+
+export const viewport: Viewport = {
+	width: "device-width",
+	initialScale: 1,
 };
 
 export default function RootLayout({
