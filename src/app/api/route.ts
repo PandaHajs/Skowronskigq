@@ -12,6 +12,7 @@ const names: string[] = [
 	"Lvl 9 wizard",
 	"I saw corpos strip farmers of water",
 	"Technoblade never dies",
+	"I am not there; I did not die.",
 ];
 
 export async function GET() {
