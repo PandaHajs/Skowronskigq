@@ -28,6 +28,11 @@ export default function Home() {
 						link="https://clicker.skowronski.one/"
 						description="Simple clicker game made with NextJS, Flask and PostgreSQL, also using websockets."
 					/>
+					<Project
+						title="Portfolio Website"
+						link="https://arica-ochre.vercel.app/"
+						description="Portfolio website made for my girlfriend, made using React, TS, SASS and the Next.JS framework."
+					/>
 				</section>
 				<div>
 					<h2>Team Projects</h2>
